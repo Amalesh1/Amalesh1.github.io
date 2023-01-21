@@ -68,6 +68,20 @@ footer {
   text-align: center;
   padding: 1em;
 }
+/* Add the following code to your CSS file */
+.animation {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 </style>
 </head>
@@ -85,6 +99,8 @@ footer {
     <section id="about">
       <h2>About Amalesh</h2>
       <p>I am a software engineer at Capgemini Engineering. I have a good understanding of web development and Java Swing GUI) development. I prefer spring boot for backend.</p>
+      <button id="animate-button">Animate</button>
+</section>
     </section>
     <section id="projects">
       <h2>My Projects</h2>
@@ -111,4 +127,14 @@ footer {
     <p>Copyright © 2023 Amalesh Adhikary</p>
   </footer>
 </body>
+<script>
+    // Add the following code to your javascript file
+const animateButton = document.getElementById("animate-button");
+const aboutSection = document.getElementById("about");
+
+animateButton.addEventListener("click", function() {
+  aboutSection.classList.add("animation");
+});
+
+</script>
 </html>
