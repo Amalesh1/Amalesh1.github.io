@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e9e9e9;
+  padding: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav a:hover {
+  color: #555;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section#about-me img {
+  float: left;
+  margin-right: 20px;
+}
+
+section#projects li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+section#projects img {
+  float: left;
+  margin-right: 20px;
+}
+
+section#contact form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #e9e9e9;
+  padding: 20px;
+  text-align: center;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+
+footer nav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+footer nav a:hover {
+  color: #555;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section id="about-me">
+        <h1>About Me</h1>
+        <img src="profile-pic.jpg" alt="Profile Picture">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id iaculis suscipit, urna nibh dictum est, euismod aliquet augue est et erat.</p>
+        <ul>
+          <li>Skill 1</li>
+          <li>Skill 2</li>
+          <li>Skill 3</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h1>Projects</h1>
+        <ul>
+          <li>
+            <h2>Project 1</h2>
+            <img src="project1.jpg" alt="Project 1 Screenshot">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id iaculis suscipit, urna nibh dictum est, euismod aliquet augue est et erat.</p>
+            <a href="#">View Details</a>
+          </li>
+          <li>
+            <h2>Project 2</h2>
+            <img src="project2.jpg" alt="Project 2 Screenshot">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id iaculis suscipit, urna nibh dictum est, euismod aliquet augue est et erat.</p>
+            <a href="#">View Details</a>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h1>Contact</h1>
+        <ul>
+          <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+          <li>Phone: 555-555-5555</li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/yourusername">https://linkedin.com/in/yourusername</a></li>
+        </ul>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br>
+          <label for="message">Message:</label
+          <textarea id="message" name="message"></textarea><br>
+          <input type="submit" value="Send">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <a href="https://twitter.com/yourusername">Twitter</a>
+        <a href="https://github.com/yourusername">GitHub</a>
+        <a href="https://medium.com/@yourusername">Medium</a>
+      </nav>
+      <p>Copyright ©2022 Your Name</p>
+    </footer>
+  </body>
+</html>
